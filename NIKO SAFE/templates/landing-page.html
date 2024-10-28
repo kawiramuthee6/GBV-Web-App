@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break the Silence: End Gender-Based Violence</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .cta-button {
+        background-color: #ff5733;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 30px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #e64a2e;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      #why {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Break the Silence</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why">Why It Matters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#offer">What We Offer</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">Login/ <br>Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header
+      style="
+        background-image: url('/static/images/gbv.png');
+        background-size: 40%;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+      "
+    >
+      <h1>Welcome to Break the Silence</h1>
+    </header>
+    <div id="about" class="container mt-5">
+      <h2 style="text-align: center">&mdash;About Us&mdash;</h2>
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="/static/images/about-image.jpg"
+            alt="About Image"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="about-description">
+            <p>
+              Break the Silence is a global movement dedicated to eradicating
+              Gender-Based Violence (GBV) in all its forms. We believe that
+              every individual has the right to live free from violence and
+              fear, regardless of gender identity or expression. Our mission is
+              to raise awareness, provide support services, and advocate for
+              systemic change to end GBV once and for all.
+            </p>
+            <p>
+              Through education, community outreach, and empowerment programs,
+              we strive to create a world where everyone can live with dignity
+              and respect. Join us in our fight to break the silence and end
+              gender-based violence for good.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="why" class="container mt-5">
+      <h2 style="text-align: center">&mdash;Why It Matters&mdash;</h2>
+      <br />
+      <p>
+        Gender-Based Violence (GBV) is a pervasive and deeply-rooted issue that
+        affects millions of individuals worldwide on a daily basis. It
+        encompasses various forms of violence, including physical, sexual,
+        emotional, and economic abuse, targeting individuals based on their
+        gender identity or expression.
+      </p>
+      <p>
+        At its core, GBV violates fundamental human rights and undermines the
+        dignity, autonomy, and well-being of survivors. It perpetuates cycles of
+        trauma, fear, and inequality, hindering individuals from fully
+        participating in society and realizing their potential.
+      </p>
+      <p>
+        GBV not only inflicts immediate harm on survivors but also has
+        far-reaching consequences for families, communities, and societies as a
+        whole. It perpetuates harmful gender norms and inequalities, perpetuates
+        cycles of poverty, and undermines social cohesion and economic
+        development.
+      </p>
+      <p>
+        Addressing GBV is not only a moral imperative but also a strategic
+        priority for achieving gender equality and sustainable development. By
+        tackling the root causes of GBV, promoting gender-responsive policies,
+        and providing comprehensive support services for survivors, we can
+        create a world where everyone can live free from violence and fear.
+      </p>
+      <p>
+        Together, let us stand in solidarity with survivors, challenge harmful
+        norms and attitudes, and work towards building a future where GBV is not
+        only condemned but eradicated in all its forms.
+      </p>
+    </div>
+    <div id="offer" class="container mt-5">
+      <h2>What We Offer</h2>
+      <p>
+        - Support Services: Access to hotlines, counseling, and shelters for
+        survivors of GBV...
+      </p>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <p>
+          Copyright © 2024 Break the Silence. All rights reserved.
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+          <a href="#">Contact Us</a>
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

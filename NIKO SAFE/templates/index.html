@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break the Silence - Home</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .jumbotron {
+        background-color: #f8f9fa;
+        padding: 80px 20px;
+        margin-bottom: 0;
+      }
+      .feature {
+        padding: 50px 20px;
+      }
+      .feature-icon {
+        font-size: 3rem;
+        color: #ff5733;
+        margin-bottom: 20px;
+      }
+      .logout-btn {
+        margin-top: 20px;
+      }
+      .jumbotron.bg-primary {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .service-image {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Break the Silence</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#take-action">Take Action</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center bg-primary">
+      <div class="container">
+        <h1 class="display-4">Break the Silence</h1>
+        <p class="lead">Ending Gender-Based Violence Together</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="feature">
+      <div class="container text-center">
+        <h2>About Us</h2>
+        <p class="lead">
+          Break the Silence is a global movement dedicated to eradicating
+          Gender-Based Violence (GBV) in all its forms.
+        </p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="feature bg-light">
+      <div class="container text-center">
+        <h2>Our Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <img
+                src="/static/images/call.jpg"
+                alt="Hotline Image"
+                class="img-fluid"
+              />
+            </div>
+            <h3>24/7 Hotline</h3>
+            <p>
+              The hotlines below provides immediate support and assistance to survivors
+              of GBV. <br>
+              Gender Based Violence Hotline: 1195.<br>
+              Police helpline 999/112<br>
+              Childline Kenya helpline 116<br>
+              UWIANO SMS Platform 10<br>
+              Kimbilio GBV helpline: 1193.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <img
+                src="/static/images/community.webp"
+                alt="Community Support Image"
+                class="img-fluid"
+              />
+            </div>
+            <h3>Community Support</h3>
+            <p>
+              We offer community-based support services, including counseling
+              and group therapy.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <img
+                src="/static/images/shelter.jpg"
+                alt="Safe Shelters Image"
+                class="img-fluid"
+              />
+            </div>
+            <h3>Safe Shelters</h3>
+            <p>
+              Our safe shelters provide temporary housing and protection for
+              survivors in need.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary">Get Help</a>
+      </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="feature">
+      <div class="container text-center">
+        <h2>Take Action</h2>
+        <p class="lead">
+          Join us in our fight to end GBV and support survivors.
+        </p>
+        <a href="{{ url_for('report') }}" class="btn btn-danger"
+          >Take Action Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-4">
+      <div class="container">
+        <p>&copy; 2024 Break the Silence. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
